@@ -15,12 +15,14 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px;
+    gap: 37px 59px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
+    gap: 94px;
   }
 }
 
@@ -43,6 +45,9 @@
 
 
 .process__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -53,6 +58,22 @@
 
   @media (min-width: $tablet) {
     min-height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    align-self: start;
+  }
+}
+
+
+.process__description {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 65px;
   }
 }
 
@@ -67,6 +88,27 @@
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+  }
+}
+
+
+.process__item--health::after {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../../icons/one.svg");
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 270px;
+    position: absolute;
+    z-index: -1;
+    left: 25px;
+  }
 }
 
 .process__item--powder::before {
@@ -80,6 +122,27 @@
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+  }
+}
+
+
+.process__item--powder::after {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../../icons/two.svg");
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 270px;
+    position: absolute;
+    z-index: -1;
+    left: 45px;
+  }
 }
 
 .process__item--food::before {
@@ -93,6 +156,26 @@
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+  }
+}
+
+.process__item--food::after {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../../icons/three.svg");
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 270px;
+    position: absolute;
+    z-index: -1;
+    left: 45px;
+  }
 }
 
 .process__item--result::before {
@@ -106,4 +189,24 @@
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+  }
+}
+
+.process__item--result::after {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../../icons/four.svg");
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 270px;
+    position: absolute;
+    z-index: -1;
+    left: 48px;
+  }
 }

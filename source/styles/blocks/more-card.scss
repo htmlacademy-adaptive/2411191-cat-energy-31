@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet) {
     align-items: center;
-    padding: 50px 37px 40px;
+    padding: 50px 37px 37px;
     background-color: transparent;
     row-gap: 22px;
     border-bottom: none;
@@ -37,23 +37,24 @@
     flex-direction: column;
     width: 324px;
     border: solid 2px #f2f2f2;
+    margin-top: 82px;
+    height: 429px;
+    justify-content: end;
   }
 
   @media (min-width: $desktop) {
     padding: 0 38px 40px;
     width: 245px;
+    row-gap: 24px;
   }
 }
 
-
 .more-card__description {
-
   margin: 0;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 21px;
   color: #444444;
-
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -63,19 +64,14 @@
     line-height: 18px;
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
-// font-size: 12px;
-// line-height: 16px;
-// text-align: center;
-// color: #444444;
-// margin: 0;
-// margin-top: 8px;
-// margin-bottom: 21px;
-
-
 .more-card__title {
-  margin: 78px 0 8px;
+  margin: 59px 0 8px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -88,20 +84,16 @@
     font-size: 20px;
     line-height: 24px;
     padding: 0;
-
     max-width: 150px;
     text-align: center;
     margin: 47px auto 0;
     margin-bottom: 0;
   }
-}
-// text-align: center;
-// margin: 0;
-// margin-top: 78px;
-// text-transform: uppercase;
-// width: 100%;
-// position: relative;
 
+  @media (min-width: $desktop) {
+    margin: 80px auto 0;
+  }
+}
 
 .more-card__button {
   display: block;
@@ -109,19 +101,22 @@
   color: #444444;
   border: none;
   margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
-
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
 
   @media (min-width: $tablet) {
     grid-area: 3 / 1 / auto / 2;
-    margin-top: 50px;
+    margin-top: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 64px;
   }
 }
 
