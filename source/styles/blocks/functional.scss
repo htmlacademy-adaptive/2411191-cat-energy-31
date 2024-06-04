@@ -1,0 +1,136 @@
+.functional {
+  background-image: url("../../images/background/backcground-cat-happy-mobile@1x.png");
+  width: 100%;
+  min-height: 302px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 580px;
+  }
+}
+
+.functional__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+
+.functional__wrapper::before {
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/background/background-cat-happy-desktop@1x.png");
+    width: 720px;
+    height: 694px;
+    background-repeat: no-repeat;
+    left: 50%;
+    z-index: 1;
+    top: -43%;
+  }
+}
+
+
+.functional__wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+
+.functional__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    color: #000000;
+    line-height: 60px;
+    font-size: 60px;
+    margin-top: 53px;
+    margin-left: 90px;
+    width: 450px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 100px;
+    margin-left: 160px;
+  }
+}
+
+.functional__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    position: relative;
+  }
+}
+
+.functional__image {
+  display: block;
+  margin-top: 29px;
+
+  @media (min-width: $tablet) {
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    z-index: 2;
+    position: absolute;
+    top: -283px;
+    right: 331px;
+  }
+}
+
+.functional__button {
+  margin-top: 3px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 47px;
+    left: 120px;
+    height: 54px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 191px;
+    top: 48px;
+  }
+}

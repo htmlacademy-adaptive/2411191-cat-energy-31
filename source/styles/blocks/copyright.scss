@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 163px;
+  }
+}
+
+.copyright__text-logo {
+  color: #444444;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+
+.copyright__img-logo {
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    background: #68b738;
+  }
+
+  &:active {
+    background: #68b738;
+    opacity: 30%;
+  }
+}

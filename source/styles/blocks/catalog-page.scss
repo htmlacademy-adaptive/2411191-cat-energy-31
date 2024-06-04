@@ -1,0 +1,38 @@
+.catalog-page {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-page__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  padding: 27px 40px 40px 20px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 53px 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 64px 0 84px 110px;
+  }
+}
+
+.catalog-page-container {
+  @media (min-width: $tablet) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}

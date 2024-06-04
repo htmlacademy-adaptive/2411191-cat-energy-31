@@ -1,0 +1,80 @@
+.analitic__state {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 15px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.analitic__statistics {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  margin: 0;
+  margin-top: 8px;
+  text-align: center;
+  position: absolute;
+  top: 39px;
+  background-color: #eaeaea;
+  padding: 0 15px;
+  width: 85px;
+
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    padding: 0;
+    margin-top: 23px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #e2e2e2;
+  }
+}
+
+.analitic {
+  margin-top: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    margin-top: 55px;
+    width: 365px;
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 110px;
+    justify-content: left;
+    gap: 42px;
+    margin-top: 69px;
+  }
+}
+
+.analitic__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  position: relative;
+  min-height: 58px;
+
+  @media (min-width: $tablet) {
+    min-width: 162px;
+    min-height: 71px;
+  }
+}

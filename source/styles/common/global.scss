@@ -1,1 +1,85 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.index-container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+
+.catalog-container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: #68b738;
+  border: none;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+.button--order {
+  grid-column: span 2;
+
+  @media (min-width: $desktop) {
+    margin-top: 17px;
+  }
+}
+
+.order-button {
+  grid-row: 3 / 3;
+  grid-column: 1 / 3;
+  margin-top: 14px;
+
+  @media (min-width: $desktop) {
+    width: 244px;
+  }
+}

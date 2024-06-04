@@ -1,0 +1,155 @@
+.additional__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin: 25px 0 36px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 44px 0 80px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 71px 0 80px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional__title::after {
+  content: "";
+  width: 100%;
+  border: 1px solid rgba(104, 183, 56, 1);
+  position: absolute;
+  top: 10px;
+  left: 95%;
+
+  @media (min-width: $tablet) {
+    top: 15px;
+    left: 51%;
+  }
+
+
+  @media (min-width: $desktop) {
+    left: 35%;
+    top: 18px;
+  }
+}
+
+.additional__title::before {
+  @media (min-width: $tablet) {
+    content: "";
+    width: 30px;
+    border: 1px solid rgba(104, 183, 56, 1);
+    position: absolute;
+    top: 15px;
+    left: -70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 70px;
+    left: -110px;
+    top: 18px;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    min-width: 896px;
+  }
+}
+
+.additional__product-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 0 0;
+    padding: 23px 0 20px;
+  }
+}
+
+
+.additional__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional__product-text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 13px 0 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 30px 0 0;
+  }
+}
+
+.additional__product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+    gap: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 285px;
+    margin-right: 42px;
+    justify-content: space-between;
+  }
+}
+
+.additional__item {
+  padding: 13px 0 17px;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    padding: 0 38px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    display: grid;
+    grid-template-columns: 1fr 48%;
+    height: 139px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
+    height: 72px;
+  }
+}
