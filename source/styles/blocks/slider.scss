@@ -6,17 +6,36 @@
   overflow: hidden;
   background: #eaeaea;
   width: 50%;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient(to top, #eaeaea 364px, #ffffff 0);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(to bottom, #ffffff 26%, #eaeaea 0%);
+  }
 }
 
 
 .slider {
   position: relative;
 
+  @media (min-width: $tablet) {
+    margin-top: 99px;
+    width: 560px;
+    height: 512px;
+    position: absolute;
+    left: 104px;
+    bottom: 118px;
+  }
+
   @media (min-width: $desktop) {
     margin-left: 224px;
+    margin-top: 0;
+    bottom: 101px;
+    left: 38%;
   }
 }
-
 
 .slider__button {
   cursor: pointer;
@@ -28,10 +47,25 @@
   padding: 0;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 49%;
   display: block;
-}
 
+  @media (min-width: $tablet) {
+    left: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    height: 100%;
+  }
+
+  &:hover {
+    background: #68b738;
+  }
+
+  &:active {
+    background: rgba(94, 170, 47, 0.6);
+  }
+}
 
 .slider__button::before {
   content: "";
@@ -46,10 +80,10 @@
   left: -38px;
 
   @media (min-width: $tablet) {
-    bottom: 249px;
+    bottom: 236px;
+    left: -40px;
   }
 }
-
 
 .slider__button::after {
   content: "";
@@ -63,4 +97,31 @@
   mask-repeat: no-repeat;
   mask-size: 24px 18px;
   mask-position: 100%;
+
+  @media (min-width: $tablet) {
+    top: 48%;
+    right: -8px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 48%;
+  }
+}
+
+.slider__button:hover::after {
+  background: #68b738;
+}
+
+.slider__button:hover::before {
+  border-color: #68b738;
+}
+
+.slider__button:active::after {
+  background: #68b738;
+  opacity: 60%;
+}
+
+.slider__button:active::before {
+  border-color: #68b738;
+  opacity: 60%;
 }

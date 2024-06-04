@@ -17,10 +17,15 @@
   @media (min-width: $tablet) {
     padding: 55px 30px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 68px 110px;
+  }
 }
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -28,35 +33,44 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+    margin-left: 36px;
   }
 }
 
 
 .footer__social-link {
   padding: 2px 14px;
+
+  &:hover,
+  &:focus {
+    background: #68b738;
+  }
+
+  &:active {
+    background: #68b738;
+    opacity: 30%;
+  }
 }
 
 
 .footer__social-link--vk {
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#vk");
-  mask-size: 28px 22px;
+  mask-size: 24px 22px;
   mask-repeat: no-repeat;
 }
-
 
 .footer__social-link--youtube {
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#youtube");
-  mask-size: 28px 22px;
+  mask-size: 24px 22px;
   mask-repeat: no-repeat;
 }
-
 
 .footer__social-link--telegram {
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#telegram");
-  mask-size: 28px 22px;
+  mask-size: 24px 22px;
   mask-repeat: no-repeat;
 }
 
@@ -82,4 +96,22 @@
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.footer__logo-text {
+  width: 128px;
+  height: 24px;
+  background-color: #111111;
+  mask-image: url("../../images/logo/logo-text-cat.svg");
+  mask-size: 128px 24px;
+  mask-repeat: no-repeat;
+}
+
+.footer__logo-text:hover,
+.footer__logo-text:focus {
+  background-color: #3e3e3e;
+}
+
+.footer__logo-text:active {
+  background-color: #6b6b6b;
 }
