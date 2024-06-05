@@ -1,6 +1,6 @@
 .catalog-page {
   margin: 0;
-  padding: 0;
+  padding: 0 110px;
 }
 
 .catalog-page__title {
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 64px 0 84px 110px;
+    margin: 64px 0 84px;
   }
 }
 
