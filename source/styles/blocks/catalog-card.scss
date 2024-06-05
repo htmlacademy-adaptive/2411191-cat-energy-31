@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop) {
-    justify-content: flex-start;
-    gap: 63px 80px;
+    justify-content: space-between;
+    gap: 63px 76px;
     min-height: 1085px;
   }
 }
