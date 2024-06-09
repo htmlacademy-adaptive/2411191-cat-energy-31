@@ -1,6 +1,10 @@
 .catalog-page {
   margin: 0;
-  padding: 0 110px;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
 }
 
 .catalog-page__title {
@@ -18,21 +22,11 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    margin: 53px 30px;
+    margin: 53px 30px 0;
     border: none;
   }
 
   @media (min-width: $desktop) {
     margin: 64px 0 84px;
-  }
-}
-
-.catalog-page-container {
-  @media (min-width: $tablet) {
-    padding: 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0 110px;
   }
 }

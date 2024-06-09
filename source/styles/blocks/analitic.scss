@@ -44,14 +44,16 @@
 }
 
 .analitic {
-  margin-top: 21px;
+  margin-top: 19px;
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 
   @media (min-width: $tablet) {
     margin-top: 55px;
-    width: 365px;
+    width: 367px;
     gap: 43px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop) {

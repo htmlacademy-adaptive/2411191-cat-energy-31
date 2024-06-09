@@ -2,6 +2,10 @@
   @media (min-width: $desktop) {
     margin: 71px 0;
   }
+
+  @media (min-width: $desktop) {
+    margin: 73px 0 0;
+  }
 }
 
 
@@ -22,7 +26,7 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
-    gap: 94px;
+    gap: 95px;
   }
 }
 
@@ -34,7 +38,7 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 23px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
@@ -47,7 +51,6 @@
 .process__item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -55,6 +58,7 @@
   margin-left: 80px;
   min-height: 60px;
   position: relative;
+  align-items: center;
 
   @media (min-width: $tablet) {
     min-height: 280px;
@@ -101,7 +105,7 @@
 .process__item--health::after {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../../icons/one.svg");
+    background-image: url("../../icons/stack.svg#one");
     background-repeat: no-repeat;
     height: 230px;
     width: 270px;
@@ -135,7 +139,7 @@
 .process__item--powder::after {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../../icons/two.svg");
+    background-image: url("../../icons/stack.svg#two");
     background-repeat: no-repeat;
     height: 230px;
     width: 270px;
@@ -168,7 +172,7 @@
 .process__item--food::after {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../../icons/three.svg");
+    background-image: url("../../icons/stack.svg#three");
     background-repeat: no-repeat;
     height: 230px;
     width: 270px;
@@ -201,7 +205,7 @@
 .process__item--result::after {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../../icons/four.svg");
+    background-image: url("../../icons/stack.svg#four");
     background-repeat: no-repeat;
     height: 230px;
     width: 270px;

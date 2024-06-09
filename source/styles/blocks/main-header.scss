@@ -25,10 +25,12 @@
     margin: 0;
     gap: 13px;
     min-width: 174px;
+    align-items: center;
   }
 
   @media (min-width: $desktop) {
     width: 202px;
+    align-items: center;
 
     &:hover {
       opacity: 80%;
