@@ -49,10 +49,12 @@
     width: 727px;
     height: 760px;
     background-repeat: no-repeat;
-    z-index: 1;
-    top: 92%;
-    transform: translate(1%, -50%);
+
     right: 0%;
+    z-index: 1;
+    top: 50%;
+    transform: translate(1%, -50%);
+
   }
 }
 
@@ -122,9 +124,11 @@
   @media (min-width: $desktop) {
     z-index: 2;
     position: absolute;
+
+    top: -233px;
     right: 42%;
     transform: translate(50%, -5%);
-    top: -256px;
+
   }
 }
 

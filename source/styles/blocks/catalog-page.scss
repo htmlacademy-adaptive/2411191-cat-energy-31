@@ -28,5 +28,17 @@
 
   @media (min-width: $desktop) {
     margin: 64px 0 84px;
+
+  }
+}
+
+.catalog-page-container {
+  @media (min-width: $tablet) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+
   }
 }
