@@ -147,6 +147,11 @@
       </div>
       <div class="slider">
         <picture>
+          <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+            srcset="images/content/result-after-tablet-desktop@1x.webp, images/content/result-after-tablet-desktop@2x.webp 2x">
+          <source width="280" height="256" type="image/webp" media="(min-width: 320px)"
+            srcset="images/content/result-after-tablet-desktop@1x.webp, images/content/result-after-tablet-desktop@2x.webp 2x">
+
           <source width="560" height="512" type="image/png" media="(min-width: 768px)"
             srcset="images/content/result-after-tablet-desktop@1x.png, images/content/result-after-tablet-desktop@2x.png 2x">
           <img class="slider__img" src="images/content/result-after-mobile@1x.png"
@@ -155,6 +160,11 @@
 
         <div class="slider__after">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+              srcset="images/content/result-before-tablet-desktop@1x.webp, images/content/result-before-tablet-desktop@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" media="(min-width: 320px)"
+              srcset="images/content/result-before-tablet-desktop@1x.webp, images/content/result-before-tablet-desktop@2x.webp 2x">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/content/result-before-tablet-desktop@1x.png, images/content/result-before-tablet-desktop@2x.png 2x">
             <img class="slider__img" src="images/content/result-before-mobile@1x.png"
@@ -175,9 +185,15 @@
       <p class="map-card__title">приглашаем <br>
         к сотрудничеству
         дилеров!</p>
-      <address class="map-card__address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</address>
+      <div class="map-card__address">
+        <p class="map-card__text">
+          ул. Большая
+          Конюшенная, д. 19/8
+        </p>
+        <p class="map-card__text">
+          Санкт-Петербург
+        </p>
+      </div>
     </div>
     <div class="map-location">
       <iframe

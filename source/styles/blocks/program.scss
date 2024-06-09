@@ -15,7 +15,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 23px;
 
   @media (min-width: $tablet) {
     gap: 30px;
@@ -35,23 +35,26 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
-  margin: 1px 0 29px 71px;
+  padding-left: 71px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
+    padding: 0;
+    width: 400px;
   }
 
   @media (min-width: $desktop) {
     text-align: center;
-    padding-left: 73px;
+    padding-left: 132px;
   }
 }
 
 .program__card-title--slim {
   @media (min-width: $desktop) {
-    padding-left: 33px;
+    padding-left: 91px;
   }
 }
 
@@ -62,7 +65,7 @@
   color: #222222;
   position: relative;
   margin: 0;
-  margin-bottom: 41px;
+  margin-top: 29px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -70,7 +73,6 @@
     margin: 0;
     margin-top: 24px;
     width: 340px;
-    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop) {
@@ -85,14 +87,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  text-align: center;
+  display: block;
   color: #000000;
   text-transform: uppercase;
-  padding: 4px 56px 4px 0;
+  margin-top: 43px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 26px;
   }
 
   &:active {
@@ -132,19 +139,17 @@
   @media (min-width: $tablet) {
     width: 140px;
     height: 194px;
-    top: 80px;
+    top: 86px;
     left: 475px;
   }
-
 
   @media (min-width: $desktop) {
     width: 70px;
     height: 97px;
-    top: 11%;
-    left: 12%;
+    top: 41px;
+    left: 65px;
   }
 }
-
 
 .program__card--pro::before {
   content: "";
@@ -192,7 +197,7 @@
   @media (min-width: $desktop) {
     width: 100px;
     height: 100px;
-    top: 13%;
+    top: 12%;
     left: 9%;
   }
 }
@@ -229,7 +234,7 @@
   }
 
   @media (min-width: $desktop) {
-    bottom: 71px;
+    bottom: 67px;
   }
 }
 
