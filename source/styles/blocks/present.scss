@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-color: #227409;
   padding: 60px 60px 40px;
-  margin-top: 35px;
+  margin-top: 34px;
 
   @media (min-width: $tablet) {
     background-image:
@@ -72,12 +72,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 187px;
+  width: 158px;
+
 
   @media (min-width: $tablet) {
     flex-direction: row;
     min-width: 505px;
-    margin: 0 18px 31px;
+    margin-left: 18px;
+    height: 77px;
   }
+
 
   @media (min-width: $desktop) {
     flex-direction: column;
