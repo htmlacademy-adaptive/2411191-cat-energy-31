@@ -68,9 +68,14 @@ a {
 
 .button--order {
   grid-column: span 2;
+  margin-top: 11px;
+
+  @media (min-width: $tablet) {
+    margin-top: 4px;
+  }
 
   @media (min-width: $desktop) {
-    margin-top: 17px;
+    margin-top: 22px;
   }
 }
 

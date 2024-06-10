@@ -19,7 +19,7 @@
 }
 
 .catalog-card__item {
-  padding: 20px 20px 25px;
+  padding: 17px 20px 25px;
   position: relative;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
@@ -73,12 +73,14 @@
   object-fit: contain;
   grid-column: 1;
   grid-row: 1 / span 2;
+  margin-bottom: -10px;
 
   @media (min-width: $tablet) {
     height: 210px;
     margin-top: -71px;
     grid-column: 1;
     grid-row: unset;
+    margin-bottom: 1px;
   }
 
   @media (min-width: $desktop) {
@@ -89,6 +91,7 @@
 .catalog-card__link--small {
   @media (min-width: $tablet) {
     padding-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   @media (min-width: $desktop) {
@@ -119,6 +122,7 @@
   max-width: 90px;
   text-transform: uppercase;
   grid-column: 2 / -1;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet) {
     grid-row: 2;
