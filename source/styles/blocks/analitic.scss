@@ -30,8 +30,8 @@
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
-    width: 125px;
-    padding: 0;
+    width: fit-content;
+    padding: 0 9px;
     margin-top: 23px;
     background-color: #ffffff;
   }
@@ -61,6 +61,7 @@
     justify-content: left;
     gap: 42px;
     margin-top: 69px;
+    width: 600px;
   }
 }
 

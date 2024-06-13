@@ -12,9 +12,9 @@
   }
 
   @media (min-width: $desktop) {
-    justify-content: space-between;
-    gap: 63px 76px;
-    min-height: 1085px;
+    justify-content: start;
+    gap: 63px 80px;
+    min-height: 511px;
   }
 }
 
@@ -36,6 +36,7 @@
 
   @media (min-width: $desktop) {
     width: 245px;
+    height: 511px;
   }
 }
 

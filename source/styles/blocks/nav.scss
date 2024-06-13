@@ -32,6 +32,7 @@
     line-height: 29px;
     min-width: 478px;
     background-color: transparent;
+    row-gap: 0;
   }
 }
 
@@ -63,6 +64,10 @@
 
   @media (min-width: $tablet) {
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 0;
   }
 }
 
